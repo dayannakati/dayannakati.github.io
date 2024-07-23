@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="utils/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid "
+        style="background: url('utils/images/Picsart_24-06-10_09-22-39-393.jpg') no-repeat center center; background-size: cover;">
+        <div class="overlay">
+            <div class="container text-center">
+                <h1 class="display-4">Regalos</h1>
+                <button class="navbar-toggler" type="button" id="sidebarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <ul class="list-unstyled components">
+            <li class="nav-item"><a class="nav-link btn btn-outline-light mx-2 my-1" href="ubicacion.html"><i
+                        class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-light mx-2 my-1" href="vestimenta.html"><i
+                        class="fas fa-tshirt"></i> Vestimenta</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-light mx-2 my-1" href="itinerario.html"><i
+                        class="fas fa-list"></i> Itinerario</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-light mx-2 my-1" href="regalos.html"><i
+                        class="fas fa-gift"></i> Regalos</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-light mx-2 my-1" href="confirmacion.html"><i
+                        class="fas fa-envelope"></i> Confirmación</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-light mx-2 my-1" href="contacto.html"><i
+                        class="fas fa-phone"></i> Contacto</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-light mx-2 my-1" href="musica.html"><i
+                        class="fas fa-music"></i> Musica</a></li>
+        </ul>
+    </div>
+
+    <section id="regalos" class="container my-5">
+        <h2 class="text-center custom-color">Regalos</h2>
+        <p class="text-center">El mejor regalo para nosotros es vuestra presencia y cariño.</p>
+        <p class="text-center">Si de todos modos queréis obsequiarnos con algo, hemos decidido que lo que más nos
+            ayudaría en este momento son contribuciones monetarias para nuestro futuro juntos.</p>
+        <p class="text-center">¡Gracias de antemano por vuestra generosidad y cariño!</p>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <div class="animated-envelope">
+                    <i class="fas fa-gift fa-3x"></i>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cuenta Bancaria</h5>
+                        <p class="card-text text-center">Banco: Openbank </p>
+                        <p class="card-text text-center">Cuenta: 1234567890</p>
+                        <p class="card-text text-center">Titular: Jose Manuel y Dayanna</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 text-center">
+                <div class="animated-envelope">
+                    <i class="fas fa-envelope fa-3x"></i>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Lluvia de Sobres</h5>
+                        <p class="card-text text-center"> Es la tradición de regalar dinero en efectivo a los novios, en
+                            un sobre el dia de la boda.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 mt-4">
+        <p>&copy; 2025 Jose Manuel y Dayanna</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script>
+        // Sidebar toggle functionality
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('.navbar-toggler-icon').toggleClass('open');
+            });
+
+            $('.container, .img-fluid').waypoint(function () {
+                $(this.element).addClass('animate__animated animate__fadeIn');
+            }, {
+                offset: '75%'
+            });
+        });
+    </script>
+</body>
+
+</html>
